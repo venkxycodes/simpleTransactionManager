@@ -1,4 +1,3 @@
-# account.py
 from utils import display_balance, log_transaction
 
 
@@ -11,7 +10,7 @@ class Account:
     def deposit(self, amount):
         self.balance += amount
         display_balance(self.balance)
-        log_transaction(f"Deposit: +${amount:.2f}")
+        log_transaction(f"Deposit: + Rupees {amount:.2f}")
 
     def withdraw(self, amount):
         if amount > self.balance:
@@ -19,7 +18,7 @@ class Account:
         else:
             self.balance -= amount
             display_balance(self.balance)
-            log_transaction(f"Withdrawal: -${amount:.2f}")
+            log_transaction(f"Withdrawal: -Rupees {amount:.2f}")
 
     def get_account_info(self):
         print(f"Account Number: {self.account_number}")

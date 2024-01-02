@@ -1,7 +1,5 @@
-# utils.py
-
 def display_balance(balance):
-    print(f"Current Balance: ${balance:.2f}")
+    print(f"Current Balance: Rupees {balance:.2f}")
 
 
 def log_transaction(message):

@@ -1,12 +1,11 @@
-# main.py
 from account import Account
 from transaction import perform_transaction
 
 
 def main():
-    account = Account(account_number="123456", holder_name="John Doe", balance=1000.0)
+    account = Account(account_number="30052001", holder_name="Venkat", balance=3000.0)
 
-    print("Welcome to the Simple Banking System")
+    print("Welcome to SBI, ", account.holder_name)
 
     while True:
         print("\nOptions:")
